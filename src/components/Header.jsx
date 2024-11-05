@@ -10,7 +10,7 @@ function Header() {
     <>
       <div className='flex justify-between px-7 py-7 bg-gray-100 h-full'>
         <div className='flex gap-5 items-center font-bold text-c'>
-          <FontAwesomeIcon icon={faPlaneUp} className='w-8' style={{ color: '#0DD496' }} />
+          <FontAwesomeIcon icon={faPlaneUp} className='w-8' style={{ height:'auto' ,  color: '#0DD496' }} />
           <span className='text-blue-600'>E-Flight</span>
         </div>
         <div className='flex gap-5'>

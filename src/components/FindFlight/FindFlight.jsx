@@ -22,7 +22,7 @@ import './FindFlight.css'
 function FindFlight() {
     const [selectedOption, setSelectedOption] = useState('roundTrip');
     const [date, setDate] = useState(new Date())
-    const [selectedDate, setSelectedDate] = useState('Departure');
+    const [selectedDate, setSelectedDate] = useState('departure');
     const [departureDate, setDepartureDate] = useState(null);
     const [returnDate, setReturnDate] = useState(null);
     const handleSelectDate = (type) => {
