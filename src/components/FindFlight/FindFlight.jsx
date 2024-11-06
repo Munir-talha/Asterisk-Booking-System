@@ -56,16 +56,16 @@ function FindFlight() {
         <>
         <div className="container mx-auto px-4 mt-5 grid grid-cols-12 gap-4">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-4">
-                <div className="bg-white p-4 rounded-xl shadow-2xl"> 
-                    <p className="font-bold">Find your Flight!</p>
-                    <div className='flex gap-2'>
+                <div className="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-screen-lg ">
+                    <p className="font-bold text-center text-4xl md:text-left mb-8">Find your Flight!</p>
+                    <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                         {/* This is roundtripBadge */}
                         <Badge
                             variant="secondary"
                             onClick={() => handleSelect('roundTrip')}
                             className={`cursor-pointer ${selectedOption === 'roundTrip' ? 'border-blue-500 shadow-lg' : 'border-gray-300'}`}
                         >
-                            <FontAwesomeIcon icon={faArrowsTurnToDots} className="mr-2 w-7 h-5" /> Round trip
+                            <FontAwesomeIcon icon={faArrowsTurnToDots} className="mr-2 w-5 h-4 md:w-7 md:h-5" /> Round trip
                         </Badge>
                         {/* This is OneWayBadge */}
                         <Badge
@@ -73,12 +73,12 @@ function FindFlight() {
                             onClick={() => handleSelect('oneWay')}
                             className={`cursor-pointer ${selectedOption === 'oneWay' ? 'border-green-500 shadow-2xl' : 'border-gray-300'}`}
                         >
-                            <FontAwesomeIcon icon={faArrowRight} className="mr-2 w-7 h-5" /> One Way
+                            <FontAwesomeIcon icon={faArrowRight} className="mr-2 w-5 h-4 md:w-7 md:h-5" /> One Way
                         </Badge>
-                        <div>
+                        <div className="flex-1">
                             <Select>
-                                <SelectTrigger className="w-auto flex items-center gap-2 bg-destructive text-white px-4 py-2 rounded-lg">
-                                    <FontAwesomeIcon icon={faUser} className='w-5 h-5 mr-2' />
+                                <SelectTrigger className="w-full flex items-center gap-2 bg-destructive text-white px-4 py-2 rounded-lg">
+                                    <FontAwesomeIcon icon={faUser} className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                                     <SelectValue placeholder="1" className="text-white flex-grow" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -91,10 +91,10 @@ function FindFlight() {
                                 </SelectContent>
                             </Select>
                         </div>
-                        <div>
+                        <div className="flex-1">
                             <Select>
-                                <SelectTrigger className="w-auto flex items-center gap-2 bg-destructive text-white px-4 py-2 rounded-lg">
-                                    <FontAwesomeIcon icon={faMoneyCheckDollar} className="w-5 h-5 mr-2" />
+                                <SelectTrigger className="w-full flex items-center gap-2 bg-destructive text-white px-4 py-2 rounded-lg">
+                                    <FontAwesomeIcon icon={faMoneyCheckDollar} className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                                     <SelectValue placeholder="Economy" className="text-white flex-grow" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -107,20 +107,20 @@ function FindFlight() {
                             </Select>
                         </div>
                     </div>
-                    <div className='flex gap-3 mt-5'>
-                        <div style={{ background: '#0077b6' }} className='p-8 rounded-2xl flex gap-8'>
-                            <div className="grid w-full max-w-sm items-center gap-1.5">
+                    <div className="flex flex-col justify-center md:flex-row gap-3 mt-4 md:mt-5">
+                        <div className="p-4 md:p-8 rounded-2xl flex flex-col md:flex-row gap-4 md:gap-8 bg-blue-600 w-full md:w-auto">
+                            <div className="grid w-full md:max-w-sm items-center gap-1.5">
                                 <Label className="text-white" htmlFor="From">From</Label>
                                 <Input className="border-b-white text-white focus-visible:border-none" id="From" placeholder="From Where To Fly?" />
                             </div>
-                            <div className="grid w-full max-w-sm items-center gap-1.5">
+                            <div className="grid w-full md:max-w-sm items-center gap-1.5">
                                 <Label className="text-white" htmlFor="To">To</Label>
                                 <Input className="border-b-white text-white focus-visible:border-none" id="To" placeholder="What is your Destination?" />
                             </div>
                         </div>
-                        <div style={{ background: '#0077b6' }} className='rounded-2xl h-auto'>
-                            <Button className=' rounded-2xl h-full bg-green-400'>
-                                <FontAwesomeIcon icon={faMagnifyingGlass} className="w-7 h-7 mr-auto" />
+                        <div className="w-full md:w-auto">
+                            <Button className="w-full md:h-full md:rounded-2xl bg-green-400">
+                                <FontAwesomeIcon icon={faMagnifyingGlass} className="w-6 h-6 md:w-7 md:h-7 mr-auto" />
                             </Button>
                         </div>
                     </div>

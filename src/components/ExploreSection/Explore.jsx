@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/com
 
 export default function Explore() {
   return (
-    <div className="p-6 font-sans my-24 mx-7">
+    <div className="p-6 font-sans mt-24 mx-7">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-16">
         <div className="flex items-center">
           <FontAwesomeIcon icon={faLocationDot} className="mr-2 text-purple-600" />
