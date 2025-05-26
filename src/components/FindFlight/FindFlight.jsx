@@ -108,7 +108,7 @@ function FindFlight() {
         <div className="container mx-auto px-4 mt-5 grid grid-cols-12 gap-4">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-4">
                 <div className="bg-white p-4 md:p-6 rounded-xl shadow-2xl max-w-screen-lg ">
-                    <p className="font-bold text-center text-4xl md:text-left mb-8">Find your Flight!</p>
+                    <p className="font-bold text-center text-4xl md:text-left mb-8">Find your Flightss!</p>
                     <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                         {/* Round Trip / One Way badges */}
                         <Badge
