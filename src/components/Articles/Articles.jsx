@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/c
 function Articles() {
   return (
     <div className="p-6 font-sans">
-      <h1 className="text-5xl font-bold text-center mb-6">What's New?</h1>
+      <h1 className="text-5xl font-bold text-center mb-6">Whats New?</h1>
 
       <div className="flex justify-around flex-wrap gap-4">
         {[1, 2, 3].map((item, index) => (
