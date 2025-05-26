@@ -1,9 +1,5 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true, // Ensures all pages are treated as static files with .html
-  serverActions: true, // ✅ OK if you're using Server Actions
-
+  output: 'export',       // ❌ Static export mode (no server features allowed)
+  trailingSlash: true,
+  serverActions: true,    // ❌ Conflicts with static export
 };
-
-export default nextConfig;
