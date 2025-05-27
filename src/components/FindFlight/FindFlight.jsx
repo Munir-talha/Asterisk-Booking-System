@@ -195,7 +195,7 @@ function FindFlight() {
                 <div className="bg-white p-4 rounded-xl shadow-2xl flex justify-around">
                     <div className='flex flex-col gap-8 align-middle'>
                         <Button 
-                            className={`px-4 py-2 rounded-3xl ${selectedDate === 'departure' ? 'bg-orange-400 text-white' : 'bg-black text-orange-400'}`} 
+                            className={`px-4 py-2 rounded-3xl ${selectedDate === 'departure' ? 'bg-orange-400 text-white' : 'bg-white text-orange-400 border-2 border-black'}`} 
                             onClick={() => setSelectedDate('departure')}
                         >
                             <FontAwesomeIcon icon={faCalendarDay} className="mr-2 w-7 h-5" />
@@ -203,7 +203,7 @@ function FindFlight() {
                         </Button>
                         {selectedOption === 'roundTrip' ?                                        
                         <Button 
-                            className={`px-4 py-2 rounded-3xl ${selectedDate === 'returned' ? 'bg-orange-400 text-white' : 'bg-black text-orange-400'}`} 
+                            className={`px-4 py-2 rounded-3xl ${selectedDate === 'returned' ? 'bg-orange-400 text-white' : 'bg-white text-orange-400 border-2 border-black'}`} 
                             onClick={() => setSelectedDate('returned')}
                         >
                             <FontAwesomeIcon icon={faCalendarDay} className="mr-2 w-7 h-5" />
